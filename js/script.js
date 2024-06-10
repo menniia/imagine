@@ -44,3 +44,28 @@ const friendAge = 64
 
 const totalAge = myAge + friendAge
 console.log(totalAge)
+
+// write a function that will add a participant to our Google Classroom
+
+const existingUser = []
+  
+function addUser(email) {
+  existingUser.push(email);
+}
+
+addUser('another@email.com')
+existingUser;
+
+
+const users = [
+  {
+    username: 'name',
+    password: 'aPasswrodWxample',
+    email: 'anEmailExample'
+  },
+   {
+    username: 'anotherName',
+    password: 'anotherPassword',
+    email: 'alsoAnotherEmail'
+  }
+]
