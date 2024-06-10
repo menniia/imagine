@@ -1,3 +1,4 @@
+// js in the DOM
 const btn = document.getElementById('btn');
 btn.onclick = function () {
     const name = prompt('Enter your full name');
@@ -36,3 +37,10 @@ fullName.replace('Mennia', 'Menniia');
 fullName.slice(5, 15);
 fullName.split("");
 fullName.indexOf("h");
+
+// Math
+const myAge = 87
+const friendAge = 64
+
+const totalAge = myAge + friendAge
+console.log(totalAge)
