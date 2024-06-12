@@ -69,3 +69,78 @@ const users = [
     email: 'alsoAnotherEmail'
   }
 ]
+
+// write a function that will take a user with
+// firstname, lastname and return fullname
+
+const userName = {
+  userFirstName: 'Donatus',
+  userLastName: 'Mennia'
+}
+
+function fullName(userName){
+  return  `${userName.userFirstName} ${userName.userLastName}`;
+}
+
+fullName(userName)
+
+// array map
+const users = [
+  {firstName: 'Donatus', lastName: 'Mennia'},
+  {firstName: 'Newname',lastName: 'lastnname'}
+]
+
+users.map(fullName);
+
+
+// write a function that will take a user with
+// firstname, lastname and return fullname using spread
+
+const userName1 = {
+  userFirstName: 'Donatus',
+  userLastName: 'Mennia'
+}
+
+function fullName(userName1){
+  return  {
+    ...users1,
+    fullName: `${userName1.userFirstName} ${userName1.userLastName}`;
+  };
+}
+
+fullName(userName1)
+
+// array map
+const users1 = [
+  {firstName: 'Donatus', lastName: 'Mennia'},
+  {firstName: 'Newname',lastName: 'lastnname'}
+]
+
+users.map(fullName);
+
+function squared(num) {
+  return num * num;
+}
+
+squared(3)
+
+// write a function that will allow a user to reset their password
+
+const user = {
+  email: 'myemail@gmail.com',
+  password: 1234
+}
+
+function resetPassword(email, password) {
+  if (user.email === email & user.password === password) {
+    return 'correct password - login successful';
+  } else if (user.email === email & user.password !== password) {
+    user['password'] = password;
+    return password;
+  } else if (user.email !== email) {
+    return 'invalid email'
+  }
+}
+
+resetPassword('myemail@gmail.com', 1235)
+user
