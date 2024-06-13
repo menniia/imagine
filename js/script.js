@@ -144,3 +144,37 @@ function resetPassword(email, password) {
 
 resetPassword('myemail@gmail.com', 1235)
 user
+
+// you have been given an array of students with some of them marked as absent and others marked as present. 
+// write a function that returns the total number of students present.
+
+const students = [
+  {id1: 1, present: true},
+  {id1: 2, present: true},
+  {id1: 3, present: false},
+  {id1: 4, present: true},
+  {id1: 5, present: false}
+]
+
+function studentsPresent(students) {
+  let totalNumber = 0
+  for(let i = 0; i < students.length; i++) {
+    if(students[i].present) totalNumber++
+  }
+  return totalNumber;
+}
+
+studentsPresent(students)
+
+// classes in javascript
+class Laptop {
+  constructor(brand, color) {
+    this.brand = brand;
+    this.color = color;
+  }
+}
+
+const laptop1 = new Laptop('dell', 'black');
+const laptop2 = new Laptop('HP', 'silver');
+laptop1.brand;
+laptop2.color;
